@@ -568,7 +568,7 @@
       "Create page component",
       "Add route /circle-area"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -578,7 +578,7 @@
       "Draw circle SVG",
       "Show radius and circumference props"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -588,7 +588,7 @@
       "Calculate sector paths for N segments",
       "Support N=8, 16, 32, 64"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -598,7 +598,7 @@
       "Color adjacent sectors differently",
       "Visual distinction"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {
@@ -638,7 +638,7 @@
       "Dropdown/Slider for 8/16/32/64 slices",
       "Update visual immediately"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -648,7 +648,7 @@
       "Show how 64 looks like a rectangle",
       "Comparing curves to straight lines"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
