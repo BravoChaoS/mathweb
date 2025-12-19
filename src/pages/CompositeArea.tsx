@@ -86,7 +86,7 @@ const CompositeArea: React.FC = () => {
       </div>
 
       {/* Canvas */}
-      <div className="flex-1 bg-slate-50 rounded-2xl border border-slate-200 shadow-inner relative overflow-hidden"
+      <div className="flex-1 bg-slate-50 rounded-2xl border border-slate-200 shadow-inner relative overflow-hidden min-h-[500px]"
         style={{
           backgroundImage: 'radial-gradient(#cbd5e1 1px, transparent 1px)',
           backgroundSize: `${GRID_SIZE}px ${GRID_SIZE}px`

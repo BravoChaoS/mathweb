@@ -258,7 +258,7 @@ const TreePlanting: React.FC = () => {
       </div>
 
       {/* Visualization */}
-      <div className="flex-1 bg-white rounded-2xl border border-slate-200 shadow-inner flex flex-col items-center justify-center relative overflow-hidden p-4">
+      <div className="flex-1 bg-white rounded-2xl border border-slate-200 shadow-inner flex flex-col items-center justify-center relative overflow-hidden p-4 min-h-[500px]">
         <div className="absolute top-4 left-4 text-slate-400 text-sm font-bold tracking-widest">VISUALIZATION</div>
         <svg viewBox={`0 0 ${VISUAL_WIDTH} ${VISUAL_HEIGHT}`} className="w-full h-full max-h-[600px]">
           {mode === 'closed' ? renderCircular() : renderLinear()}

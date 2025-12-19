@@ -73,3 +73,30 @@
 ## Next Steps
 - Implement **Decimal Operations (小数乘除法)** module.
 - Consider adding "Check Answer" logic to Composite Area (detect if shapes match target).
+
+# Progress Summary - Coder Agent (Session 7)
+
+## Accomplishments
+1. **Task & Test Flow Update**:
+   - Updated `app_spec.txt` to enforce "Mobile-First" and responsive design requirements.
+   - Updated `.agent/workflows/coder.md` to include mandatory mobile verification steps (375px check).
+   - Added "Global Mobile Responsiveness Check" task to `feature_list.json` as failing (todo).
+
+2. **Mobile Sidebar Fix (High Priority)**:
+   - Addressed user feedback about the sidebar taking up too much space on mobile.
+   - Refactored `Sidebar.tsx` to be a collapsible overlay on mobile (hidden by default).
+   - Updated `Layout.tsx` to include a mobile-only top header with a Hamburger menu.
+   - Implemented logic to close the sidebar when a navigation link is clicked.
+   - Ensured the main content area expands to full width on mobile.
+
+3. **Verification**:
+   - Used browser automation to simulate iPhone SE (375x667).
+   - Verified that the sidebar is hidden by default and content is legible.
+   - Verified the hamburger menu opens the sidebar correctly.
+
+## Status Updates
+- Updated `feature_list.json` to mark "Implement Responsive Sidebar" as passing.
+
+## Next Steps
+- Perform the "Global Mobile Responsiveness Check" on all module pages.
+- Start implementation of **Equation Solver** or **Decimal Operations**.

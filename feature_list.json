@@ -1382,7 +1382,7 @@
       "Create page component",
       "Add route /equation-solver"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1392,7 +1392,7 @@
       "Render visual scale",
       "Left/Right pans"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1412,7 +1412,7 @@
       "Store LHS and RHS terms",
       "Parsing logic"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1422,7 +1422,7 @@
       "X as box",
       "Constants as weights"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1432,7 +1432,7 @@
       "Generate ax + b = c",
       "Random or preset"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1442,7 +1442,7 @@
       "Add, Sub, Mul, Div buttons",
       "Input value for op"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1462,7 +1462,7 @@
       "Enforce symmetric operations",
       "Error if only one side"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1472,7 +1472,7 @@
       "Log each operation",
       "Show equation transformation"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {
@@ -1482,7 +1482,7 @@
       "Check if x = result",
       "Success state"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
