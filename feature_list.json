@@ -39,7 +39,7 @@
       "Verify readable font sizes",
       "Check interactive elements touch targets"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "critical"
   },
   {

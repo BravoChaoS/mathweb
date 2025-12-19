@@ -159,3 +159,21 @@
 ## Next Steps
 - **Mobile Responsiveness Check** (Global). This remains a high priority for the next session.
 - Implement **Word Problems (列方程解决问题)**.
+
+# Progress Summary - Coder Agent (Session 10)
+
+## Accomplishments
+1. **Global Mobile Responsiveness Check (Critical)**:
+   - Audited all existing modules on 375px viewport (iPhone SE).
+   - **Fixed Circle Area Layout**: Updated header to stack vertically on mobile, preventing overlap between title and slice selector.
+   - **Fixed Composite Area Layout**: 
+     - Enabled horizontal scrolling (`overflow-auto`) for the Canvas container so content isn't cut off.
+     - Updated "Area Calculation" table to wrap text and use smaller font size on mobile to fit the narrow screen.
+   - **Verified**: All pages (Triangle, Circle, Tree, Composite, Equation, Decimal) now render correctly on mobile without accidental overflow or invisible content.
+
+## Status Updates
+- Updated `feature_list.json`: Marked "Global Mobile Responsiveness Check" as passing.
+
+## Next Steps
+- Implement **Word Problems (列方程解决问题)**.
+- Implement **Equation Builder / Word Problem Logic**.

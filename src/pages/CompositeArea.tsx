@@ -70,9 +70,9 @@ const CompositeArea: React.FC = () => {
           </h3>
           <div className="space-y-2">
             {shapes.map(shape => (
-              <div key={shape.id} className="flex justify-between items-center bg-white p-2 rounded shadow-sm">
-                <span className="font-bold text-slate-700">图形 {shape.label}</span>
-                <span className="font-mono text-indigo-600">{shape.width / GRID_SIZE} × {shape.height / GRID_SIZE} = {(shape.width * shape.height) / (GRID_SIZE * GRID_SIZE)}</span>
+              <div key={shape.id} className="flex flex-wrap justify-between items-center bg-white p-2 rounded shadow-sm gap-x-2">
+                <span className="font-bold text-slate-700 whitespace-nowrap">图形 {shape.label}</span>
+                <span className="font-mono text-indigo-600 text-sm sm:text-base break-all">{shape.width / GRID_SIZE} × {shape.height / GRID_SIZE} = {(shape.width * shape.height) / (GRID_SIZE * GRID_SIZE)}</span>
               </div>
             ))}
             <div className="border-t border-indigo-200 pt-2 mt-2 flex justify-between items-center font-bold text-lg">
@@ -86,7 +86,7 @@ const CompositeArea: React.FC = () => {
       </div>
 
       {/* Canvas */}
-      <div className="flex-1 bg-slate-50 rounded-2xl border border-slate-200 shadow-inner relative overflow-hidden min-h-[500px]"
+      <div className="flex-1 bg-slate-50 rounded-2xl border border-slate-200 shadow-inner relative overflow-auto min-h-[500px]"
         style={{
           backgroundImage: 'radial-gradient(#cbd5e1 1px, transparent 1px)',
           backgroundSize: `${GRID_SIZE}px ${GRID_SIZE}px`

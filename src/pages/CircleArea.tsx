@@ -122,7 +122,7 @@ const CircleArea: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="flex w-full max-w-[800px] justify-between items-end mb-2">
+      <div className="flex flex-col md:flex-row w-full max-w-[800px] justify-between items-start md:items-end mb-4 md:mb-2 gap-4 md:gap-0">
         <div>
           <h2 className="text-3xl font-bold text-slate-800">圆的面积公式推导</h2>
           <div className="text-slate-500">人教版六年级上册 · 圆的面积</div>
