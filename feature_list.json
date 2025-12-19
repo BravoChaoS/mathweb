@@ -818,7 +818,7 @@
       "Create page component",
       "Add route /tree-planting"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -828,7 +828,7 @@
       "Toggle Linear vs Circular",
       "Switch visualization"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -838,7 +838,7 @@
       "Draw straight line",
       "Mark start and end"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -848,7 +848,7 @@
       "Draw circle path",
       "Mark circumference"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -858,7 +858,7 @@
       "Total Length (L) input",
       "Interval (d) input"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -869,7 +869,7 @@
       "One end",
       "Neither end"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -879,7 +879,7 @@
       "Calculate Count based on Mode",
       "Handle division by zero"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -889,7 +889,7 @@
       "Render tree icons at intervals",
       "Match calculated count"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -899,7 +899,7 @@
       "Animate trees popping up one by one",
       "Show count increasing"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {
@@ -909,7 +909,7 @@
       "Show derived 'Intervals'",
       "Show derived 'Trees'"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -929,7 +929,7 @@
       "Show dynamic formula (e.g. N = L/d + 1)",
       "Update based on mode"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -959,7 +959,7 @@
       "Custom SVG Tree",
       "Simple and clear"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {
@@ -979,7 +979,7 @@
       "Disable 'End Modes' for circle",
       "Force Count = Intervals"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1029,7 +1029,7 @@
       "Prevent negative L or d",
       "Max limit to prevent crash"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1039,7 +1039,7 @@
       "Fit path in view",
       "Scale trees appropriate"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {

@@ -178,7 +178,7 @@ const CircleArea: React.FC = () => {
                   d={createWedgePath()}
                   fill={fill}
                   stroke="white"
-                  strokeWidth={sliceCount > 32 ? "0.5" : "1"}
+                  strokeWidth={step >= 4 ? "0.2" : (sliceCount > 32 ? "0.5" : "1")}
                 />
               </g>
             );
