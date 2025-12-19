@@ -2,6 +2,21 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trees, Info } from 'lucide-react';
 
+// Tree Component - Moved outside to prevent re-mounting on every render
+const TreeIcon: React.FC<{ x: number, y: number, index: number, isGhost?: boolean }> = ({ x, y, index, isGhost = false }) => (
+  <motion.g
+    initial={{ scale: 0, opacity: 0, x, y }}
+    animate={{ scale: 1, opacity: isGhost ? 0.3 : 1, x, y }}
+    exit={{ scale: 0, opacity: 0 }}
+    transition={{ delay: index * 0.05, type: "spring" }}
+  >
+    {/* Simple Tree SVG - Adjusted coordinates to be centered at (0,0) for better positioning */}
+    <path d="M 0 0 L 0 -20" stroke="#854d0e" strokeWidth="4" />
+    <path d="M 0 -20 L -10 -10 L -6 -20 L -12 -30 L 0 -50 L 12 -30 L 6 -20 L 10 -10 Z" fill={isGhost ? "#cbd5e1" : "#16a34a"} />
+    <circle cx="0" cy="0" r="3" fill="#3f3f46" />
+  </motion.g>
+);
+
 const TreePlanting: React.FC = () => {
   const [totalLength, setTotalLength] = useState(100); // meters
   const [interval, setInterval] = useState(20); // meters
@@ -47,22 +62,6 @@ const TreePlanting: React.FC = () => {
 
   // Safety check for division by zero, though min interval is 5
   const scale = totalLength > 0 ? DRAW_LENGTH / totalLength : 1; // pixels per meter
-
-  // Tree Component
-  const TreeIcon = ({ x, y, index, isGhost = false }: { x: number, y: number, index: number, isGhost?: boolean }) => (
-    <motion.g
-      initial={{ scale: 0, opacity: 0 }}
-      animate={{ scale: 1, opacity: isGhost ? 0.3 : 1 }}
-      exit={{ scale: 0, opacity: 0 }}
-      transition={{ delay: index * 0.05, type: "spring" }}
-      transform={`translate(${x}, ${y})`}
-    >
-      {/* Simple Tree SVG */}
-      <path d="M 0 0 L 0 -20" stroke="#854d0e" strokeWidth="4" />
-      <path d="M 0 -20 L -10 -10 L -6 -20 L -12 -30 L 0 -50 L 12 -30 L 6 -20 L 10 -10 Z" fill={isGhost ? "#cbd5e1" : "#16a34a"} />
-      <circle cx="0" cy="0" r="3" fill="#3f3f46" />
-    </motion.g>
-  );
 
   const renderLinear = () => {
     const trees = [];
