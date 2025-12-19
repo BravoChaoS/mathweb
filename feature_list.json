@@ -1833,7 +1833,7 @@
       "Create page component",
       "Add route /decimal-ops"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1843,7 +1843,7 @@
       "Render 100 cells",
       "Coordinate system"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1853,7 +1853,7 @@
       "Inputs for 0.X and 0.Y",
       "Step 0.1"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1863,7 +1863,7 @@
       "Highlight N rows for first num",
       "Color 1"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1873,7 +1873,7 @@
       "Highlight M cols for second num",
       "Color 2"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1883,7 +1883,7 @@
       "Detect intersection",
       "Color Mixed"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1893,7 +1893,7 @@
       "Show Total cells",
       "Show Overlap cells"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1903,7 +1903,7 @@
       "Display 0.X * 0.Y = ?",
       "Update result"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
