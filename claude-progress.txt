@@ -177,3 +177,29 @@
 ## Next Steps
 - Implement **Word Problems (列方程解决问题)**.
 - Implement **Equation Builder / Word Problem Logic**.
+
+# Progress Summary - Coder Agent (Session 11)
+
+## Accomplishments
+1. **Implemented Word Problems (列方程解决问题)**:
+   - Implemented `src/pages/WordProblems.tsx`.
+   - **Features**:
+     - **Bar Model Visualization**: Dynamic SVG component to visualize "Multiple" relationships (e.g. 1 unit vs 4 units).
+     - **Equation Builder**: Interactive input field to type equations (e.g. `4x=48`) with real-time validation.
+     - **Step-by-Step Solution**: Automatically generates and displays the solution steps upon correct validation.
+     - **Navigation**: Support for switching between problems (currently Problem 1 implemented).
+   - **Verification**:
+     - Verified end-to-end flow: View Problem -> View Bar Model -> Enter Equation -> Check -> See Solution.
+     - Verified visual elements via browser screenshot.
+
+## Status Updates
+- Updated `feature_list.json`: Marked "WordProblems Route Setup", "Bar Model Component", "Equation Builder", "Variable Mapping", etc., as passing.
+
+## Next Steps
+- **Extend Word Problems**:
+  - Implement logic/viz for **Sum/Difference (和差)** problems (Problem 2).
+  - Implement **Catch-up (追及)** problems.
+- **Enhance Interactivity**:
+  - Add "Drag and Drop" to Equation Builder (currently text input).
+  - Add interactive sliders to Bar Model to explore "What if" scenarios.
+- **Global Mobile Check**: Verify the new module on mobile.
