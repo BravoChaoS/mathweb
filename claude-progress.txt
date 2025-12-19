@@ -18,3 +18,58 @@
 ## Next Steps
 - Implement **Tree Planting (植树问题)** module.
 - Continue with Phase 2 of `implementation_plan`.
+
+# Progress Summary - Coder Agent (Session 5)
+
+## Accomplishments
+1. **Circle Area Visual Fix**:
+   - Refined the Circle Area visualization in steps 4 and 5 by reducing stroke width to 0.2, effectively eliminating the visual gap between sectors while maintaining structure.
+   - Verified visually that the interlock appears seamless.
+
+2. **Implemented Tree Planting Module**:
+   - Created `src/pages/TreePlanting.tsx` with full functionality.
+   - Implemented interactive sliders for Total Length and Interval.
+   - Implemented 4 Modes: Both Ends, One End, Neither End, Closed Loop.
+   - Implemented dynamic SVG visualization for linear and circular paths.
+   - Added real-time calculation and formula display.
+   - Verified end-to-end with browser automation (interactive testing of modes and sliders).
+
+## Status Updates
+- Updated `feature_list.json` to mark Tree Planting features as passed.
+- Verified Triangle Perimeter module is also functional.
+
+## Next Steps
+- Implement **Composite Figures (组合图形面积)** module.
+- Continue with Shape Splitting and dragging interactions.
+
+- **Deployment Fixed**:
+  - Manually deployed the latest build to `gh-pages` branch.
+  - configured GitHub Actions (`.github/workflows/deploy.yml`) to automatically deploy on future pushes to `main`.
+
+# Progress Summary - Coder Agent (Session 6)
+
+## Accomplishments
+1. **Tree Planting Visualization Fix**:
+   - Fixed a critical bug where trees were not visible. 
+   - Cause: `TreeIcon` component defined inside render loop (causing remounts) and Framer Motion `transform` prop conflict.
+   - Fix: Moved component outside, typed it properly, and used explicit `x/y` props. 
+   - Verified: Trees are now clearly visible and distributed correctly in both Linear and Circular modes.
+
+2. **Implemented Composite Figures (组合图形面积)**:
+   - Implemented `src/pages/CompositeArea.tsx`.
+   - **Features**:
+     - Interactive Grid Canvas.
+     - Draggable Shape Components (Rectangles A and B).
+     - "Target Shape" Outline (L-Shape) to guide the user.
+     - "Split" functionality: Animates the L-shape splitting into two separate rectangles.
+     - "Reset" functionality: Restores shapes to initial state.
+     - Real-time Area Calculation display.
+   - **Verification**: Verified dragging, splitting, and visual elements via browser automation.
+
+## Status Updates
+- Updated `feature_list.json`: Marked Composite Area (Route, Canvas, Draggable, Target Outline, Splitting) as passed.
+- Tree Planting module is now fully functional and verified.
+
+## Next Steps
+- Implement **Decimal Operations (小数乘除法)** module.
+- Consider adding "Check Answer" logic to Composite Area (detect if shapes match target).

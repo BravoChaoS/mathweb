@@ -1120,7 +1120,7 @@
       "Create page component",
       "Add route /composite-area"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1130,7 +1130,7 @@
       "Interactive area",
       "Grid background"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1140,7 +1140,7 @@
       "Rect, Circle, Triangle data structures",
       "Render functions"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1150,7 +1150,7 @@
       "Make shapes draggable",
       "Update coordinates"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1160,7 +1160,7 @@
       "Draw dotted outline of target",
       "The goal shape"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {
@@ -1170,7 +1170,7 @@
       "Pre-defined split pieces",
       "Click to separate"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
