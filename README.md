@@ -1,16 +1,40 @@
-# Run and deploy your AI Studio app
+# Mathweb - 小学自适应数学可视化教学
 
-This contains everything you need to run your app locally.
+这是一个面向小学六年级学生的交互式数学教学工具。项目利用动态图形和动画来可视化抽象的数学概念。
 
-View your app in AI Studio: https://ai.studio/apps/drive/15W-8DVTpvttZiGqb5nxGvwdN4VaTbGfo
+## 核心功能
 
-## Run Locally
+1. **三角形周长**: 三边关系演示
+2. **圆的面积**: 割补法推导公式
+3. **植树问题**: 间隔与棵数关系
+4. **组合图形面积**: 割补与平移
+5. **解方程**: 天平平衡演示
+6. **列方程解决问题**: 线段图建模
+7. **小数乘除法**: 位值原理演示
 
-**Prerequisites:**  Node.js
+## 技术栈
 
+- React
+- Vite
+- Tailwind CSS
+- Framer Motion
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 本地运行
+
+1. 初始化环境:
+   ```bash
+   ./init.sh
+   ```
+
+2. 启动开发服务器:
+   ```bash
+   npm run dev
+   ```
+
+## 部署
+
+项目配置为部署到 GitHub Pages。
+
+## 许可证
+
+MIT

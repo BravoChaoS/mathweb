@@ -1,0 +1,2168 @@
+[
+  {
+    "category": "functional",
+    "description": "Initialize React project with Vite",
+    "steps": [
+      "Run npm create vite",
+      "Select React",
+      "Select TypeScript"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Install Tailwind CSS",
+    "steps": [
+      "Run npm install -D tailwindcss postcss autoprefixer",
+      "npx tailwindcss init -p"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Configure Tailwind CSS",
+    "steps": [
+      "Update tailwind.config.js content",
+      "Add directives to index.css"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Install React Router",
+    "steps": [
+      "npm install react-router-dom"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Install Framer Motion",
+    "steps": [
+      "npm install framer-motion"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Setup Project Structure (components, pages, utils)",
+    "steps": [
+      "Create src/components",
+      "Create src/pages",
+      "Create src/utils",
+      "Create src/assets"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Setup Git repository",
+    "steps": [
+      "git init",
+      "Create .gitignore"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Create 404 Not Found Page",
+    "steps": [
+      "Create NotFound.tsx",
+      "Add route * to NotFound"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Configure Path Aliases",
+    "steps": [
+      "Update vite.config.ts",
+      "Update tsconfig.json"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Setup Linting and Formatting",
+    "steps": [
+      "Configure ESLint",
+      "Configure Prettier"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Create Global Layout Component",
+    "steps": [
+      "Create Layout.tsx",
+      "Include Sidebar and Main Content area",
+      "Verify spacing"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "style",
+    "description": "Design Navigation Sidebar",
+    "steps": [
+      "Create Sidebar component",
+      "Add links to all modules",
+      "Style active state"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "style",
+    "description": "Implement Responsive Sidebar",
+    "steps": [
+      "Add hamburger menu for mobile",
+      " Verify collapse/expand on small screens"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Define Color Palette in Tailwind",
+    "steps": [
+      "Add primary, secondary, accent colors",
+      "Add semantic colors (success, error, warning)"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "style",
+    "description": "Set Global Typography",
+    "steps": [
+      "Import Google Fonts (Inter/Noto Sans SC)",
+      "Apply to body"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Create Button Component",
+    "steps": [
+      "Create Button.tsx",
+      "Implement variants (primary, secondary, outline)",
+      "Implement sizes"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "style",
+    "description": "Create Input Component",
+    "steps": [
+      "Create Input.tsx",
+      "Style focus states",
+      "Add error state styling"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Create Card Component",
+    "steps": [
+      "Create Card.tsx",
+      "Add shadow and border-radius",
+      "Add hover effects"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Create Modal Component",
+    "steps": [
+      "Create Modal.tsx",
+      "Implement overlay and close button",
+      "Add animation"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Create Tooltip Component",
+    "steps": [
+      "Create Tooltip.tsx",
+      "Show on hover",
+      "Position correctly"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Create Toggle/Switch Component",
+    "steps": [
+      "Create Toggle.tsx",
+      "Animate ON/OFF state",
+      "Support labels"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Create Slider Component",
+    "steps": [
+      "Create Slider.tsx",
+      "Style track and thumb",
+      "Support min/max/step"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Implement Dark Mode Support",
+    "steps": [
+      "Add dark mode class toggle",
+      "Define dark mode colors"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Create Page PageHeader Component",
+    "steps": [
+      "Create PageHeader.tsx",
+      "Display title and description"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Create Breadcrumbs Component",
+    "steps": [
+      "Create Breadcrumbs.tsx",
+      "Auto-generate based on route"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Create Footer Component",
+    "steps": [
+      "Create Footer.tsx",
+      "Add copyright and links"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "style",
+    "description": "Global Animation Config",
+    "steps": [
+      "Define standard transitions",
+      "Create animation utility constants"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Scrollbar Styling",
+    "steps": [
+      "Customize scrollbar width and color",
+      "Ensure cross-browser support"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "style",
+    "description": "Loading Spinner Component",
+    "steps": [
+      "Create Spinner.tsx",
+      "Animate rotation"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Error Boundary Component",
+    "steps": [
+      "Create ErrorBoundary.tsx",
+      "Display friendly error message"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Toast Notification System",
+    "steps": [
+      "Create ToastContext",
+      "Implement Toast component",
+      "Animate entry/exit"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Glassmorphism Utility",
+    "steps": [
+      "Create glass effect CSS class",
+      "Apply to overlay elements"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Gradient Backgrounds",
+    "steps": [
+      "Define mesh gradient backgrounds",
+      "Apply to specific pages"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Language Context (Chinese Default)",
+    "steps": [
+      "Verify generic texts are in Chinese",
+      "Setup i18n structure if needed (hardcoded fine)"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Accessibility Setup (Aria)",
+    "steps": [
+      "Ensure landmarks are used",
+      "Check contrast ratios"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "SEO Meta Tags Setup",
+    "steps": [
+      "Add Helmet or standard meta tags",
+      "Set default title"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Favicon and Manifest",
+    "steps": [
+      "Add favicon.ico",
+      "Create manifest.json"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Mobile Viewport Meta",
+    "steps": [
+      "Ensure correct viewport settings",
+      "Disable auto-zoom on input"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Selection Color Customization",
+    "steps": [
+      "Customize ::selection CSS",
+      "Match brand color"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "style",
+    "description": "Focus Ring Customization",
+    "steps": [
+      "Customize :focus-visible",
+      "Match brand styles"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "TrianglePerimeter Route Setup",
+    "steps": [
+      "Create page component",
+      "Add route /triangle-perimeter"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Triangle State Management",
+    "steps": [
+      "Store side lengths a, b, c",
+      "Calculate validity condition"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Triangle Rendering (Canvas/SVG)",
+    "steps": [
+      "Draw triangle based on lengths",
+      "Handle invalid triangles visually"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Input Controls for Sides",
+    "steps": [
+      "Add 3 sliders for a, b, c",
+      "Limit ranges"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Inequality Visualization",
+    "steps": [
+      "Display a + b > c text",
+      "Highlight failing inequality"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "style",
+    "description": "Triangle Animation on Change",
+    "steps": [
+      "Animate vertices when sides change",
+      "Smooth transition"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Broken Triangle Visual",
+    "steps": [
+      "Show sides collapsing if invalid",
+      "Gap or overlap visualization"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Triangle Color Coding",
+    "steps": [
+      "Color sides differently",
+      "Legend for sides"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Triangle Area Calc (Heron)",
+    "steps": [
+      "Calculate area (optional extra)",
+      "Display value"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Reset Triangle Button",
+    "steps": [
+      "Reset to default valid state",
+      "Clear animations"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "style",
+    "description": "Triangle Instructions Panel",
+    "steps": [
+      "Add specific instructions",
+      "Explain the theorem"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Triangle Quick Presets",
+    "steps": [
+      "Equilateral button",
+      "Isosceles button",
+      "Scalene button"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Triangle Invalid Alert",
+    "steps": [
+      "Show toast/alert when triangle breaks",
+      "Explain why"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Triangle Responsive Layout",
+    "steps": [
+      "Stack controls and canvas on mobile",
+      "Side-by-side on desktop"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Triangle Unit Tests",
+    "steps": [
+      "Test valid inputs",
+      "Test invalid inputs"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "CircleArea Route Setup",
+    "steps": [
+      "Create page component",
+      "Add route /circle-area"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Circle Initial Render",
+    "steps": [
+      "Draw circle SVG",
+      "Show radius and circumference props"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Sector Slicing Logic",
+    "steps": [
+      "Calculate sector paths for N segments",
+      "Support N=8, 16, 32, 64"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "style",
+    "description": "Segment Color Alternating",
+    "steps": [
+      "Color adjacent sectors differently",
+      "Visual distinction"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Unfolding Animation Steps",
+    "steps": [
+      "Step 1: Separate sectors",
+      "Step 2: Re-arrange top/bottom"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Rectangular Formation",
+    "steps": [
+      "Align sectors to form 'rectangle'",
+      "Handle 'teeth' interlocking"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Fix Gap Bug (High Priority)",
+    "steps": [
+      "Ensure sectors fit perfectly",
+      "Adjust coordinates for exact match"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Slice Count Control",
+    "steps": [
+      "Dropdown/Slider for 8/16/32/64 slices",
+      "Update visual immediately"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Limit Demonstration",
+    "steps": [
+      "Show how 64 looks like a rectangle",
+      "Comparing curves to straight lines"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Area Formula Derivation UI",
+    "steps": [
+      "Show Pi*r * r text",
+      "Map rectangle W/H to Pi*r and r"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "style",
+    "description": "Smooth Transition Animation",
+    "steps": [
+      "Animate from Circle to Rectangle",
+      "Reversible animation"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Step-by-Step Guide Mode",
+    "steps": [
+      "Next/Prev buttons",
+      "Text description per step"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Instructions Text",
+    "steps": [
+      "Explain cut-and-paste method",
+      "Highlight target knowledge"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Zoom Controls",
+    "steps": [
+      "Zoom in to see the 'curve' vs 'straight'",
+      "Pan support"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Reset Circle Animation",
+    "steps": [
+      "Return to initial circle state",
+      "Stop all animations"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "style",
+    "description": "Sector Border Styling",
+    "steps": [
+      "Thin borders for clarity",
+      "Remove borders for high N?"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Show/Hide Radius",
+    "steps": [
+      "Toggle radius indicator",
+      "Show r annotation"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Show/Hide Circumference",
+    "steps": [
+      "Toggle C indicator",
+      "Show C/2 annotation"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Interactive Radius Slider",
+    "steps": [
+      "Change circle size",
+      "Scale everything"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Transition Speed Control",
+    "steps": [
+      "Slow/Medium/Fast",
+      "Adjust duration"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "style",
+    "description": "Enhanced Tooltips",
+    "steps": [
+      "Hover over parts to see 'Radius'",
+      "'Circumference/2'"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Performance Optimization",
+    "steps": [
+      "Ensure 64 slices animate smoothly",
+      "Use CSS transforms or Canvas"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Mobile Touch Support",
+    "steps": [
+      "Swipe to advance steps?",
+      "Ensure buttons tapping"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Background Grid",
+    "steps": [
+      "Optional grid to judge straightness",
+      "Toggle grid"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Comparison Overlay",
+    "steps": [
+      "Overlay a true rectangle",
+      "Show difference"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "TreePlanting Route Setup",
+    "steps": [
+      "Create page component",
+      "Add route /tree-planting"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Path Type Selector",
+    "steps": [
+      "Toggle Linear vs Circular",
+      "Switch visualization"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Linear Path Rendering",
+    "steps": [
+      "Draw straight line",
+      "Mark start and end"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Circular Path Rendering",
+    "steps": [
+      "Draw circle path",
+      "Mark circumference"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Parameter Inputs",
+    "steps": [
+      "Total Length (L) input",
+      "Interval (d) input"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Planting Mode Selector",
+    "steps": [
+      "Both ends",
+      "One end",
+      "Neither end"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Tree Calculation Logic",
+    "steps": [
+      "Calculate Count based on Mode",
+      "Handle division by zero"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Tree Visualization",
+    "steps": [
+      "Render tree icons at intervals",
+      "Match calculated count"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "style",
+    "description": "Planting Animation",
+    "steps": [
+      "Animate trees popping up one by one",
+      "Show count increasing"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Interval/Count Display",
+    "steps": [
+      "Show derived 'Intervals'",
+      "Show derived 'Trees'"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Concept: Interval vs Point",
+    "steps": [
+      "Highlight 'Interval' segment",
+      "Highlight 'Tree' point"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Formula Display",
+    "steps": [
+      "Show dynamic formula (e.g. N = L/d + 1)",
+      "Update based on mode"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Trap Warning System",
+    "steps": [
+      "Alert if L is not multiple of d",
+      "Suggest rounding or exact d"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Interactive Dragging (Bonus)",
+    "steps": [
+      "Drag end point to change L",
+      "Snap to grid"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "style",
+    "description": "Tree Icon Design",
+    "steps": [
+      "Custom SVG Tree",
+      "Simple and clear"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Path Ruler/Measurement",
+    "steps": [
+      "Show tick marks on path",
+      "Numbering"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Circular Mode Special Case",
+    "steps": [
+      "Disable 'End Modes' for circle",
+      "Force Count = Intervals"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Problem Scenario 1: Street",
+    "steps": [
+      "Preset: Linear, Both Ends",
+      "Description text"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Problem Scenario 2: Lake",
+    "steps": [
+      "Preset: Circular",
+      "Description text"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Problem Scenario 3: Stairs",
+    "steps": [
+      "Preset: One end (analogy)",
+      "Description text"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Result Highlight",
+    "steps": [
+      "Pulse effect on final answer",
+      "Large font"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Input Validation",
+    "steps": [
+      "Prevent negative L or d",
+      "Max limit to prevent crash"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "style",
+    "description": "Responsive Canvas",
+    "steps": [
+      "Fit path in view",
+      "Scale trees appropriate"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Reset Simulation",
+    "steps": [
+      "Clear trees",
+      "Reset inputs"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "style",
+    "description": "Legend/Key",
+    "steps": [
+      "Tree icon = 1 tree",
+      "Gap icon = 1 interval"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Sound Effects (Optional)",
+    "steps": [
+      "Pop sound on planting",
+      "Mute toggle"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Step-by-Step Planting",
+    "steps": [
+      "'Next Tree' button",
+      "Manual control"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Auto-Play Planting",
+    "steps": [
+      "'Plant All' button",
+      "Speed control"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Reflection/Summary",
+    "steps": [
+      "End summary modal",
+      "What did we learn?"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Edge Case Testing",
+    "steps": [
+      "L = d",
+      "L < d",
+      "L = 0"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "CompositeArea Route Setup",
+    "steps": [
+      "Create page component",
+      "Add route /composite-area"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Shape Canvas Setup",
+    "steps": [
+      "Interactive area",
+      "Grid background"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Define Basic Shapes",
+    "steps": [
+      "Rect, Circle, Triangle data structures",
+      "Render functions"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Draggable Components",
+    "steps": [
+      "Make shapes draggable",
+      "Update coordinates"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Target Shape Outline",
+    "steps": [
+      "Draw dotted outline of target",
+      "The goal shape"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Shape Splitting (Visual)",
+    "steps": [
+      "Pre-defined split pieces",
+      "Click to separate"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Shape Rotation",
+    "steps": [
+      "Rotate buttons/handle",
+      "90 deg increments"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Snap to Grid/Target",
+    "steps": [
+      "Snap logic",
+      "Feedback on snap"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Color Coding Areas",
+    "steps": [
+      "Green for positive area",
+      "Red for negative/hole"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Problem 1: Square minus Circle",
+    "steps": [
+      "Load Scenario 1",
+      "Setup shapes"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Problem 2: Irregular to Rect",
+    "steps": [
+      "Load Scenario 2",
+      "Setup shapes"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Auxiliary Lines Toggle",
+    "steps": [
+      "Show hidden lines",
+      "Dashed style"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Area Calculation Panel",
+    "steps": [
+      "Show A1, A2 values",
+      "Show Total = A1 +/- A2"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "style",
+    "description": "Shape Transparency",
+    "steps": [
+      "Semi-transparent fill",
+      "See overlaps"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Reset Shapes Position",
+    "steps": [
+      "Return to start",
+      "Shuffle"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Completion Detection",
+    "steps": [
+      "Check if target filled",
+      "Success animation"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Confetti Celebration",
+    "steps": [
+      "On success",
+      "Particle effects"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Hint System",
+    "steps": [
+      "Show next move",
+      "Highlight piece"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Interactive Formula",
+    "steps": [
+      "Click shape -> Highlight variable",
+      "Click variable -> Highlight shape"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Shape Hover Effects",
+    "steps": [
+      "Glow border",
+      "Tooltips with dimensions"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Custom Shape Builder (Advanced)",
+    "steps": [
+      "Simple polygon drawing",
+      "(Optional)"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Undo/Redo Actions",
+    "steps": [
+      "History stack",
+      "Buttons"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "style",
+    "description": "Mobile Drag Support",
+    "steps": [
+      "Touch events",
+      "Prevent scroll while dragging"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Lock Shape",
+    "steps": [
+      "Prevent accidental moves",
+      "Toggle lock"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Dimension Labels",
+    "steps": [
+      "Show side lengths on shapes",
+      "Dynamic update if scaled"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "EquationSolver Route Setup",
+    "steps": [
+      "Create page component",
+      "Add route /equation-solver"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Balance Scale Component",
+    "steps": [
+      "Render visual scale",
+      "Left/Right pans"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Scale Logic",
+    "steps": [
+      "Calculate torque/weight",
+      "Determine tilt angle"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Equation State",
+    "steps": [
+      "Store LHS and RHS terms",
+      "Parsing logic"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Visual Representation",
+    "steps": [
+      "X as box",
+      "Constants as weights"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Initial Problem Generation",
+    "steps": [
+      "Generate ax + b = c",
+      "Random or preset"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Operation Controls",
+    "steps": [
+      "Add, Sub, Mul, Div buttons",
+      "Input value for op"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "style",
+    "description": "Action Animation",
+    "steps": [
+      "Animate weights appearing/disappearing",
+      "Smoot tilt adjustment"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Apply to Both Sides",
+    "steps": [
+      "Enforce symmetric operations",
+      "Error if only one side"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Step History",
+    "steps": [
+      "Log each operation",
+      "Show equation transformation"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Goal Detection",
+    "steps": [
+      "Check if x = result",
+      "Success state"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Problem 1: ax + b = c",
+    "steps": [
+      "Preset config",
+      "Guide text"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Problem 2: Simple x + a = b",
+    "steps": [
+      "Preset config",
+      "Guide text"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Auto-Simplify",
+    "steps": [
+      "Combine like terms visual",
+      "Merge weights"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Balance Physics",
+    "steps": [
+      "Damped oscillation",
+      "Realistic feel"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Hint: What to do next",
+    "steps": [
+      "Suggest 'Subtract b'",
+      "Highlight button"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Reset Equation",
+    "steps": [
+      "Restart current problem",
+      "Clear history"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "style",
+    "description": "Variable Styling",
+    "steps": [
+      "Distinct color for X",
+      "Distinct shape"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Negative Numbers Support",
+    "steps": [
+      "Visual representation (balloon?)",
+      "Or restrict to positive"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Division Visualization",
+    "steps": [
+      "Split X box into parts",
+      "Split weights"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Multiplication Visualization",
+    "steps": [
+      "Duplicate X boxes",
+      "Duplicate weights"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Input Validation",
+    "steps": [
+      "Prevent invalid ops",
+      "Divide by zero"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "style",
+    "description": "Equation Text Display",
+    "steps": [
+      "Large centered equation",
+      "Update real-time"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Verify Solution",
+    "steps": [
+      "Substitute back check",
+      "Show checkmark"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Learning Objectives Panel",
+    "steps": [
+      "Show 'Golden Rule'",
+      "Keep balanced"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "WordProblems Route Setup",
+    "steps": [
+      "Create page component",
+      "Add route /word-problems"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Bar Model Component",
+    "steps": [
+      "SVG/Canvas bars",
+      "Label support"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Problem Text Parser",
+    "steps": [
+      "Display problem text",
+      "Highlight keywords"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Problem 1: Sum/Multiple",
+    "steps": [
+      "Load data",
+      "Setup model"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Problem 2: Catch-up",
+    "steps": [
+      "Load data",
+      "Setup model"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Interactivity: Adjust Bar",
+    "steps": [
+      "Slider to change X",
+      "Other bars update"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Variable Mapping",
+    "steps": [
+      "Show which bar is 'x'",
+      "Show relations '4x'"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Braces and Labels",
+    "steps": [
+      "Draw braces for totals",
+      "Draw braces for differences"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "style",
+    "description": "Animation: Growth",
+    "steps": [
+      "Animate bars changing length",
+      "Smooth updates"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Equation Builder",
+    "steps": [
+      "Drag numbers to form eq",
+      "Or select correct eq"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Validation Mode",
+    "steps": [
+      "Check if user model matches text",
+      "Feedback"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Problem Story Mode",
+    "steps": [
+      "Step 1: Read",
+      "Step 2: Model",
+      "Step 3: Solve"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Numeric Solution",
+    "steps": [
+      "Calculate final answer",
+      "Input field to check"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Visual Hints",
+    "steps": [
+      "Arrow pointing to key relation",
+      "Color match"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Reset Problem",
+    "steps": [
+      "Clear model",
+      "Restart"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Custom Problem Input",
+    "steps": [
+      "Allow typing simple numbers",
+      "Template update"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "style",
+    "description": "Bar Colors",
+    "steps": [
+      "Distinct per entity",
+      "Consistent legend"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Comparison View",
+    "steps": [
+      "Show Model vs Equation",
+      "Bridge the gap"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Difficulty Levels",
+    "steps": [
+      "Easy/Hard nums",
+      "Hide/Show hints"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "style",
+    "description": "Character Avatars",
+    "steps": [
+      "Icons for 'Jia', 'Yi'",
+      "Friendly visuals"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "DecimalOps Route Setup",
+    "steps": [
+      "Create page component",
+      "Add route /decimal-ops"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Grid 10x10 Component",
+    "steps": [
+      "Render 100 cells",
+      "Coordinate system"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Input Decimals",
+    "steps": [
+      "Inputs for 0.X and 0.Y",
+      "Step 0.1"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Row Highlighting",
+    "steps": [
+      "Highlight N rows for first num",
+      "Color 1"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Col Highlighting",
+    "steps": [
+      "Highlight M cols for second num",
+      "Color 2"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Overlap Calculation",
+    "steps": [
+      "Detect intersection",
+      "Color Mixed"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Count Display",
+    "steps": [
+      "Show Total cells",
+      "Show Overlap cells"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Multiplication Formula",
+    "steps": [
+      "Display 0.X * 0.Y = ?",
+      "Update result"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "style",
+    "description": "Cell Animation",
+    "steps": [
+      "Fill cells sequentially",
+      "Visual counting"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Zoom/Subdivision (Advanced)",
+    "steps": [
+      "Break 0.1 into 0.01",
+      "Zoom in grid"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Shift Decimal Point Anim",
+    "steps": [
+      "Visual logic for point shift",
+      "x10, x100"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Reset Grid",
+    "steps": [
+      "Clear selection",
+      "Reset inputs"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "style",
+    "description": "Grid Labels",
+    "steps": [
+      "Axis labels 0.1, 0.2...",
+      "Corner 0"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Interactive Clicking",
+    "steps": [
+      "Click to select rows/cols",
+      "Alternative input"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Problem Generator",
+    "steps": [
+      "Random Simple Decimals",
+      "Random Hard"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Area Analogy Text",
+    "steps": [
+      "Explain Length * Width",
+      "Connect to geometry"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Responsive Grid",
+    "steps": [
+      "Resize with window",
+      "Keep square aspect"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Error Handling",
+    "steps": [
+      "Inputs > 1.0 handling",
+      "Expand grid?"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Step Mode",
+    "steps": [
+      "1. Shade rows",
+      "2. Shade cols",
+      "3. Count"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "style",
+    "description": "Result Popover",
+    "steps": [
+      "Show result near overlap",
+      "Large text"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Division Visualization",
+    "steps": [
+      "Reverse: Start with Area",
+      "Find side"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "style",
+    "description": "Color Blind Mode",
+    "steps": [
+      "Patterns instead of just colors",
+      "Texture"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Export Image",
+    "steps": [
+      "Save grid as PNG",
+      "For homework"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Tutorial Overlay",
+    "steps": [
+      "First time user guide",
+      "Dismissible"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Keyboard Support",
+    "steps": [
+      "Arrow keys adjust nums",
+      "Enter to solve"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Full Regression Test",
+    "steps": [
+      "Manual check all modules",
+      "Fix glitches"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Performance Audit",
+    "steps": [
+      "Lighthouse check",
+      " Optimize images"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Build Production",
+    "steps": [
+      "Run npm run build",
+      "Check dist folder"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Deployment Script",
+    "steps": [
+      "Setup gh-pages",
+      "Deploy workflow"
+    ],
+    "passes": false,
+    "priority": "high"
+  },
+  {
+    "category": "functional",
+    "description": "Readme Update",
+    "steps": [
+      "Document features",
+      "Add screenshots"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "License File",
+    "steps": [
+      "Add MIT License",
+      "Review"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "functional",
+    "description": "Contributing Guide",
+    "steps": [
+      "Add CONTRIBUTING.md",
+      " Guidelines"
+    ],
+    "passes": false,
+    "priority": "low"
+  },
+  {
+    "category": "style",
+    "description": "Final UI Polish",
+    "steps": [
+      "Consistent margins",
+      "Consistent fonts"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Cross-Browser Check",
+    "steps": [
+      "Chrome/Firefox/Safari",
+      "Fix flexbox issues"
+    ],
+    "passes": false,
+    "priority": "medium"
+  },
+  {
+    "category": "functional",
+    "description": "Mobile Usability Check",
+    "steps": [
+      "Touch targets sizing",
+      "Viewport check"
+    ],
+    "passes": false,
+    "priority": "medium"
+  }
+]

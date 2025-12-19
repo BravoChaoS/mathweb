@@ -1,0 +1,241 @@
+<project_specification>
+  <project_name>小学自适应数学可视化教学 (Mathweb)</project_name>
+
+  <overview>
+    这是一个面向小学六年级学生的交互式数学教学工具。项目利用动态图形和动画来可视化抽象的数学概念，帮助学生理解几何关系、代数思维和算术运算。
+    **核心要求：所有界面、说明文字、按钮和反馈必须使用简体中文。**
+  </overview>
+
+  <technology_stack>
+    <frontend>
+      <framework>React with Vite</framework>
+      <styling>Tailwind CSS</styling>
+      <graphics>SVG / HTML5 Canvas / Framer Motion (用于动画)</graphics>
+      <routing>React Router (使用 HashRouter 以兼容 GitHub Pages)</routing>
+    </frontend>
+    <deployment>
+      <platform>GitHub Pages</platform>
+    </deployment>
+  </technology_stack>
+
+  <core_features>
+    <existing_modules>
+      <!-- 这些是现有模块，需要确保其UI也是中文的，或者在重构时进行本地化 -->
+      <module name="TrianglePerimeter">
+        <description>通过动态演示展示三角形的三边关系（两边之和大于第三边）。</description>
+      </module>
+      <module name="CircleArea">
+        <description>演示将圆形切割拼补成长方形，推导面积公式的过程。</description>
+        <enhancements>
+           <enhancement_1>
+             <description>极限演示：增加额外的演示步骤或控制选项，允许通过增加切割份数（如16份、32份、64份），展示拼合后的图形越来越接近长方形的过程。</description>
+             <goal>直观展示极限思想：当份数趋近无穷大时，曲边变为直边。</goal>
+           </enhancement_1>
+        </enhancements>
+        <bug_fix priority="High">
+          修复演示步骤4、5中，上下两部分扇形在拼合时没有完全卡紧（中间存在较大缝隙）的问题，需要调整坐标或动画参数使其严丝合缝。
+        </bug_fix>
+      </module>
+    </existing_modules>
+
+    <new_teaching_modules>
+      <!-- 1. 植树问题 -->
+      <module name="TreePlanting">
+        <title>植树问题 (Tree Planting)</title>
+        <learning_objectives>
+          - 理解“间隔数”与“棵数”（点数）之间的关系。
+          - 区分不同场景：两端都种、只种一端、两端都不种、封闭路线（圆形）。
+        </learning_objectives>
+        <key_problems>
+          <problem_1>
+            <type>直线路径（两端都种）</type>
+            <desc>全长为 L 的道路，每隔 d 米种一棵树。问一共种多少棵？</desc>
+            <trap>易混淆间隔数 (L/d) 与棵数 (L/d + 1)。</trap>
+          </problem_1>
+          <problem_2>
+            <type>封闭路线</type>
+            <desc>在圆形湖泊周围种树。</desc>
+            <trap>封闭路线中，棵数等于间隔数。</trap>
+          </problem_2>
+        </key_problems>
+        <visualization>
+          <component>InteractivePath</component>
+          <features>
+            - 切换路径类型：直线 vs 圆形。
+            - 滑动条调节：总长度和间距。
+            - 切换“种植模式”：两端都种、只种一端、两端都不种。
+            - 自动更新计数器：显示“间隔数”和“树苗数”。
+            - 动画效果：树苗逐一种下，便于计数演示。
+          </features>
+        </visualization>
+      </module>
+
+      <!-- 2. 组合图形面积 -->
+      <module name="CompositeArea">
+        <title>组合图形面积 (Composite Figures)</title>
+        <learning_objectives>
+          - 掌握“割补法”（分割与平移）。
+          - 掌握“互补法”（大图形减去小空白）。
+        </learning_objectives>
+        <key_problems>
+          <problem_1>
+            <type>减去空白</type>
+            <desc>正方形中减去一个四分之一圆的面积。</desc>
+          </problem_1>
+          <problem_2>
+            <type>平移拼接</type>
+            <desc>两个重叠图形或不规则曲线，通过平移部分区域组成规则的长方形。</desc>
+          </problem_2>
+        </key_problems>
+        <visualization>
+          <component>ShapeManipulator</component>
+          <features>
+            - 拖拽图形碎片进行重组（割补）。
+            - 切换“辅助线”：显示隐藏的简单几何图形。
+            - 颜色编码：实心面积（绿色），空心/减去面积（红色）。
+          </features>
+        </visualization>
+      </module>
+
+      <!-- 3. 解方程 -->
+      <module name="EquationSolver">
+        <title>解方程 (Solving Equations)</title>
+        <learning_objectives>
+          - 理解等式的性质（天平原理）。
+          - 学习如何分离变量 x。
+        </learning_objectives>
+        <key_problems>
+          <problem_1>
+            <desc>简单线性方程：ax + b = c</desc>
+            <trap>忘记在等号两边同时进行加减乘除操作。</trap>
+          </problem_1>
+        </key_problems>
+        <visualization>
+          <component>BalanceScale</component>
+          <features>
+            - 可视化天平。左盘：未知数 (x) + 砝码。右盘：总重量砝码。
+            - 交互按钮：“减去 b”、“除以 a”。
+            - 动画：操作时，两边的砝码同时消失或缩小，保持天平平衡。
+          </features>
+        </visualization>
+      </module>
+
+      <!-- 4. 列方程解决问题 -->
+      <module name="WordProblems">
+        <title>列方程解决问题 (Word Problems)</title>
+        <learning_objectives>
+          - 识别等量关系。
+          - 使用变量建模。
+        </learning_objectives>
+        <key_problems>
+          <problem_1>
+            <type>和倍问题</type>
+            <desc>甲的数量是乙的4倍，总数是100。</desc>
+          </problem_1>
+          <problem_2>
+            <type>追及问题</type>
+            <desc>慢车先出发，快车在后面追赶。</desc>
+          </problem_2>
+        </key_problems>
+        <visualization>
+          <component>BarModelGenerator</component>
+          <features>
+            - 动态线段图 (Bar Models)。
+            - 调节 'x' (一倍量) 的长度，观察 '4x' 随之等比例变化。
+            - 花括号标注总和或差值，直观展示等量关系。
+          </features>
+        </visualization>
+      </module>
+
+      <!-- 5. 小数乘除法 -->
+      <module name="DecimalOperations">
+        <title>小数乘除法 (Decimal Ops)</title>
+        <learning_objectives>
+          - 理解小数乘法的位值原理。
+          - 乘法的几何意义（面积）。
+        </learning_objectives>
+        <key_problems>
+          <problem_1>
+            <desc>0.X * 0.Y</desc>
+            <trap>积的小数点位置点错。</trap>
+          </problem_1>
+        </key_problems>
+        <visualization>
+          <component>GridOverlay</component>
+          <features>
+            - 10x10 单位正方形网格。
+            - 高亮行表示 0.X，高亮列表示 0.Y。
+            - 重叠区域即为乘积（数小格子的数量）。
+            - 支持放大/缩小以观察不同精度。
+          </features>
+        </visualization>
+      </module>
+    </new_teaching_modules>
+  </core_features>
+
+  <ui_layout>
+    <structure>
+      - 侧边栏/头部：模块导航（全中文）。
+      - 主内容区：
+        - 左侧：控制面板（输入框、滑动条、开关）。
+        - 中/右侧：交互式画布/SVG动画。
+        - 底部：教学说明文字 / 步骤引导。
+    </structure>
+    <theme>
+      - 配色：适合儿童，色彩明亮但护眼（如天蓝、薄荷绿）。
+      - 字体：大号、清晰的无衬线字体（支持中文字体显示）。
+      - 交互：大尺寸按钮，方便点击。
+    </theme>
+    <language>
+      - 全站简体中文。
+      - 避免使用复杂的专业术语，使用小学数学教材标准用语。
+    </language>
+  </ui_layout>
+
+  <implementation_plan>
+    <phase_1>
+      <goal>设计系统、现有功能修复升级与路由设置</goal>
+      <tasks>
+        - 修复 CircleArea 模块步骤4、5的拼合缝隙问题。
+        - 增强 CircleArea 模块：添加更多切分份数（16/32/64）的演示步骤，体现极限思想。
+        - 更新侧边栏/导航菜单，包含所有新模块。
+        - 为5个新主题创建基础页面框架。
+        - 确保全站中文化配置。
+      </tasks>
+    </phase_1>
+    <phase_2>
+      <goal>开发可视化组件 (第一批)</goal>
+      <tasks>
+        - 实现“植树问题”（直线/圆形逻辑）。
+        - 实现“小数乘法”网格演示。
+      </tasks>
+    </phase_2>
+    <phase_3>
+      <goal>开发可视化组件 (第二批)</goal>
+      <tasks>
+        - 实现“组合图形面积”（图形拖拽）。
+        - 实现“解方程”天平演示。
+      </tasks>
+    </phase_3>
+    <phase_4>
+      <goal>优化与润色</goal>
+      <tasks>
+        - 为每个模块添加引导性文字和例题。
+        - 检查移动端适配。
+      </tasks>
+    </phase_4>
+  </implementation_plan>
+
+  <success_criteria>
+    <pedagogical_value>
+      - 可视化准确反映数学概念和教材内容。
+      - 有针对性地解决规范中提到的“易错点”。
+      - 圆面积推导过程严谨，无视觉误差，且充分展示极限逼近矩形的过程。
+    </pedagogical_value>
+    <usability>
+      - 界面语言纯正，无英文残留。
+      - 对于六年级学生操作直观简单。
+    </usability>
+  </success_criteria>
+
+</project_specification>
