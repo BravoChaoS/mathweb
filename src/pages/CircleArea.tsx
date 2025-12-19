@@ -88,7 +88,7 @@ const CircleArea: React.FC = () => {
       let txFinal = tx;
 
       if (isTop) {
-        ty = CY + 50; // Bottom line
+        ty = CY + RADIUS / 2; // Bottom line
         // Rotation: -90 (Points Up).
         // Wait, Top Piece should be Blue. Blue is Top Half.
         // In rect: Blue is Top part. So Curve is Top. Point is Bottom.
@@ -98,7 +98,7 @@ const CircleArea: React.FC = () => {
         // Bottom Piece (Red). Bottom Half.
         // In rect: Curve is Bottom. Point is Top.
         // So (0,0) is at Top Line. Radius points Down.
-        ty = CY - 50; // Top line
+        ty = CY - RADIUS / 2; // Top line
         // Rotation: 90.
 
         // Shift X: The red pieces slot in between blue pieces.
@@ -202,12 +202,12 @@ const CircleArea: React.FC = () => {
 
               {/* Height Brace */}
               <path
-                d={`M ${CX + 240} ${CY - 50} V ${CY + 50}`}
+                d={`M ${CX + 240} ${CY - RADIUS / 2} V ${CY + RADIUS / 2}`}
                 stroke="#334155" strokeWidth="2"
                 fill="none"
               />
-              <path d={`M ${CX + 235} ${CY - 50} H ${CX + 245}`} stroke="#334155" strokeWidth="2" />
-              <path d={`M ${CX + 235} ${CY + 50} H ${CX + 245}`} stroke="#334155" strokeWidth="2" />
+              <path d={`M ${CX + 235} ${CY - RADIUS / 2} H ${CX + 245}`} stroke="#334155" strokeWidth="2" />
+              <path d={`M ${CX + 235} ${CY + RADIUS / 2} H ${CX + 245}`} stroke="#334155" strokeWidth="2" />
 
               <text x={CX + 260} y={CY + 5} fill="#334155" fontSize="18" fontWeight="bold">
                 宽 = r

@@ -608,7 +608,7 @@
       "Step 1: Separate sectors",
       "Step 2: Re-arrange top/bottom"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -618,7 +618,7 @@
       "Align sectors to form 'rectangle'",
       "Handle 'teeth' interlocking"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -628,7 +628,7 @@
       "Ensure sectors fit perfectly",
       "Adjust coordinates for exact match"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -658,7 +658,7 @@
       "Show Pi*r * r text",
       "Map rectangle W/H to Pi*r and r"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -668,7 +668,7 @@
       "Animate from Circle to Rectangle",
       "Reversible animation"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {
@@ -678,7 +678,7 @@
       "Next/Prev buttons",
       "Text description per step"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {
@@ -688,7 +688,7 @@
       "Explain cut-and-paste method",
       "Highlight target knowledge"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {
@@ -708,7 +708,7 @@
       "Return to initial circle state",
       "Stop all animations"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "low"
   },
   {
