@@ -53,3 +53,31 @@
 - Implement the "Triangle Perimeter" module (Highest priority feature showing "passes": false).
 - Improve "Home" page design if needed.
 - Begin implementing core visualization components for the new modules.
+
+# Progress Summary - Coder Agent (Session 2)
+
+## Accomplishments
+1. **Triangle Perimeter Module (Triangle Inequality)**:
+   - Implemented full interactive module for Triangle Inequality Theorem.
+   - Features:
+     - 3 Sliders for side lengths (a, b, c).
+     - Real-time SVG visualization of the triangle or "broken" paths.
+     - Auto-calculation of existence (Triangle Inequality: a+b>c, etc.).
+     - Visual feedback (Green/Red status, Gap visualization).
+     - Calculated Area (Heron's Formula).
+     - Presets for Equilateral, Isosceles, Scalene.
+   - Replaced previous "Shaded Area" implementation (moved to  for safekeeping).
+   - Updated  to reflect the new module title "三角形三边关系".
+
+2. **Verification**:
+   - Verified end-to-end using browser automation.
+   - Confirmed UI updates, slider interactions, and validation logic.
+   - Checked Home page navigation.
+
+3. **Status Updates**:
+   - Marked 14 Triangle-related features as `passes: true` in `feature_list.json`.
+
+## Next Steps
+- Implement **Circle Area** module (Next priority).
+- Or implement **Tree Planting** module.
+- Consider what to do with the "SectorShadow" code (maybe add a new route later).

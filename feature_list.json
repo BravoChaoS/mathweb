@@ -417,7 +417,7 @@
       "Create page component",
       "Add route /triangle-perimeter"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -427,7 +427,7 @@
       "Store side lengths a, b, c",
       "Calculate validity condition"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -437,7 +437,7 @@
       "Draw triangle based on lengths",
       "Handle invalid triangles visually"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -447,7 +447,7 @@
       "Add 3 sliders for a, b, c",
       "Limit ranges"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -457,7 +457,7 @@
       "Display a + b > c text",
       "Highlight failing inequality"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -467,7 +467,7 @@
       "Animate vertices when sides change",
       "Smooth transition"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {
@@ -477,7 +477,7 @@
       "Show sides collapsing if invalid",
       "Gap or overlap visualization"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {
@@ -487,7 +487,7 @@
       "Color sides differently",
       "Legend for sides"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "low"
   },
   {
@@ -497,7 +497,7 @@
       "Calculate area (optional extra)",
       "Display value"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "low"
   },
   {
@@ -507,7 +507,7 @@
       "Reset to default valid state",
       "Clear animations"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "low"
   },
   {
@@ -517,7 +517,7 @@
       "Add specific instructions",
       "Explain the theorem"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {
@@ -528,7 +528,7 @@
       "Isosceles button",
       "Scalene button"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {
@@ -538,7 +538,7 @@
       "Show toast/alert when triangle breaks",
       "Explain why"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {
@@ -548,7 +548,7 @@
       "Stack controls and canvas on mobile",
       "Side-by-side on desktop"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {

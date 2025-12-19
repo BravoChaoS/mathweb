@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 const courses = [
   {
     id: 'triangle-perimeter',
-    title: '阴影部分的周长',
-    grade: '六年级上册',
-    category: '圆与扇形',
-    description: '通过动态演示，理解三角形内扇形围成阴影部分的周长计算原理。',
+    title: '三角形三边关系',
+    grade: '小学数学',
+    category: '三角形',
+    description: '通过动态交互，探索三角形三条边长度之间的关系（两边之和大于第三边）。',
     color: 'bg-indigo-500',
     path: '/triangle-perimeter'
   },
@@ -34,8 +34,8 @@ const Home: React.FC = () => {
 
       <div className="grid md:grid-cols-2 gap-8">
         {courses.map((course) => (
-          <Link 
-            to={course.path} 
+          <Link
+            to={course.path}
             key={course.id}
             className="group block bg-white rounded-2xl shadow-sm hover:shadow-xl border border-slate-200 hover:border-indigo-100 transition-all duration-300 overflow-hidden"
           >
@@ -61,13 +61,13 @@ const Home: React.FC = () => {
                 {course.description}
               </p>
               <div className="mt-4 flex items-center text-indigo-600 font-medium group-hover:translate-x-1 transition-transform">
-                开始学习 
+                开始学习
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
               </div>
             </div>
           </Link>
         ))}
-        
+
         {/* Placeholder for future content */}
         <div className="block bg-slate-50 rounded-2xl border border-dashed border-slate-300 p-6 flex flex-col items-center justify-center text-center opacity-75">
           <div className="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center mb-4 text-slate-400">
