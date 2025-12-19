@@ -100,3 +100,35 @@
 ## Next Steps
 - Perform the "Global Mobile Responsiveness Check" on all module pages.
 - Start implementation of **Equation Solver** or **Decimal Operations**.
+
+# Progress Summary - Coder Agent (Session 8)
+
+## Accomplishments
+1. **Fix Composite Area & Tree Planting Visualization**:
+   - Fixed an issue where visualizations collapsed to 0 or 1px height in some contexts.
+   - Added `min-h-[500px]` to visualization containers to ensure stability.
+   - Verified that the canvas is clearly visible in browser tests.
+
+2. **Implemented Equation Solver (解方程)**:
+   - Implemented `src/pages/EquationSolver.tsx`.
+   - **Features**:
+     - Dynamic Equation Generation (`ax + b = c`).
+     - Interactive operations (+, -, *, /) that act on both sides.
+     - "Balance Scale" Visualization (simple initial version).
+     - Step-by-step history log.
+     - Success detection (`x = Result`).
+   - Verified end-to-end:
+     - Navigation to page (Correctly using `/#/equation-solver`).
+     - Interaction (Subtract operation) updates equation and history correctly.
+
+3. **Server Troubleshooting Guide**:
+   - Created `docs/troubleshooting.md` to document solutions for common browser/server connection issues (Connection Refused, 404s due to base URL).
+
+## Status Updates
+- Updated `feature_list.json`: Marked "EquationSolver" tasks as passing.
+- Verified Composite Area visual fix works.
+
+## Next Steps
+- Implement **Decimal Operations (小数乘除法)**.
+- Enhance Balance Scale animation physics (optional).
+- Global Mobile Responsiveness Check (Critical for next session).
