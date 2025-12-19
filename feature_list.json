@@ -1632,7 +1632,7 @@
       "Create page component",
       "Add route /word-problems"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1642,7 +1642,7 @@
       "SVG/Canvas bars",
       "Label support"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1652,7 +1652,7 @@
       "Display problem text",
       "Highlight keywords"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1662,7 +1662,7 @@
       "Load data",
       "Setup model"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1692,7 +1692,7 @@
       "Show which bar is 'x'",
       "Show relations '4x'"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "high"
   },
   {
@@ -1722,7 +1722,7 @@
       "Drag numbers to form eq",
       "Or select correct eq"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {
@@ -1732,7 +1732,7 @@
       "Check if user model matches text",
       "Feedback"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {
@@ -1753,7 +1753,7 @@
       "Calculate final answer",
       "Input field to check"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {
