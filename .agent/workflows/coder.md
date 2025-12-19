@@ -95,6 +95,12 @@ Use browser automation tools:
 - Take screenshots at each step
 - Verify both functionality AND visual appearance
 
+**MOBILE CHECK (MANDATORY):**
+- Verify the layout looks correct at mobile width (375px)
+- Ensure no horizontal scrolling is caused by overflow
+- Ensure buttons and controls are touch-friendly (large enough)
+- Ensure Canvas/SVG scales correctly to fit the screen
+
 **DO:**
 - Test through the UI with clicks and keyboard input
 - Take screenshots to verify visual appearance

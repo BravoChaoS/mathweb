@@ -31,6 +31,18 @@
     "priority": "high"
   },
   {
+    "category": "style",
+    "description": "Global Mobile Responsiveness Check",
+    "steps": [
+      "Check all pages on 375px width",
+      "Ensure no horizontal scroll",
+      "Verify readable font sizes",
+      "Check interactive elements touch targets"
+    ],
+    "passes": false,
+    "priority": "critical"
+  },
+  {
     "category": "functional",
     "description": "Install React Router",
     "steps": [
@@ -129,7 +141,7 @@
       "Add hamburger menu for mobile",
       " Verify collapse/expand on small screens"
     ],
-    "passes": false,
+    "passes": true,
     "priority": "medium"
   },
   {
@@ -548,8 +560,8 @@
       "Stack controls and canvas on mobile",
       "Side-by-side on desktop"
     ],
-    "passes": true,
-    "priority": "medium"
+    "passes": false,
+    "priority": "high"
   },
   {
     "category": "functional",

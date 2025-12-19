@@ -9,7 +9,8 @@ import {
     Scale,
     FileQuestion,
     Calculator,
-    ChevronRight
+    ChevronRight,
+    X
 } from 'lucide-react';
 
 const navItems = [
@@ -23,24 +24,46 @@ const navItems = [
     { path: '/decimal-operations', label: '小数乘除法', icon: Calculator },
 ];
 
-const Sidebar: React.FC = () => {
+interface SidebarProps {
+    isOpen: boolean;
+    onClose: () => void;
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
     return (
-        <div className="w-64 bg-white h-screen shadow-xl flex flex-col fixed left-0 top-0 z-40 overflow-y-auto border-r border-slate-100">
-            <div className="p-6 flex items-center gap-3 border-b border-slate-100">
-                <div className="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-indigo-200">
-                    M
+        <aside
+            className={`
+                fixed top-0 left-0 z-40 h-screen w-64 bg-white shadow-2xl border-r border-slate-100
+                transition-transform duration-300 ease-in-out
+                ${isOpen ? 'translate-x-0' : '-translate-x-full'}
+                md:translate-x-0
+            `}
+        >
+            <div className="p-6 flex items-center justify-between border-b border-slate-100">
+                <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-indigo-200">
+                        M
+                    </div>
+                    <div>
+                        <h1 className="font-bold text-lg text-slate-800 tracking-tight leading-tight">MathWeb</h1>
+                        <p className="text-xs text-slate-500 font-medium">六年级数学可视化</p>
+                    </div>
                 </div>
-                <div>
-                    <h1 className="font-bold text-lg text-slate-800 tracking-tight leading-tight">MathWeb</h1>
-                    <p className="text-xs text-slate-500 font-medium">六年级数学可视化</p>
-                </div>
+                {/* Close button for mobile */}
+                <button
+                    onClick={onClose}
+                    className="md:hidden p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-50 rounded-lg transition-colors"
+                >
+                    <X size={20} />
+                </button>
             </div>
 
-            <nav className="flex-1 p-4 space-y-1.5">
+            <nav className="flex-1 p-4 space-y-1.5 overflow-y-auto">
                 {navItems.map((item) => (
                     <NavLink
                         key={item.path}
                         to={item.path}
+                        onClick={onClose}
                         className={({ isActive }) =>
                             `group flex items-center justify-between px-4 py-3.5 rounded-xl transition-all duration-300 ease-in-out ${isActive
                                 ? 'bg-indigo-50 text-indigo-700 shadow-sm'
@@ -75,7 +98,7 @@ const Sidebar: React.FC = () => {
                     </p>
                 </div>
             </div>
-        </div>
+        </aside>
     );
 };
 
